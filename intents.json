@@ -20,7 +20,7 @@
          "context_set": ""
         },
         {"tag": "shop",
-         "patterns": ["Id like to buy something", "what do you reccommend?", "could i get something to eat"],
+         "patterns": ["Id like to buy something", "what do you reccommend?", "could i get something to eat","what is fresh"],
          "responses": ["We sell chocolate chip cookies for $2!", "Cookies are on the menu!"],
          "context_set": ""
         },
@@ -29,30 +29,46 @@
          "responses": ["We are open 7am-4pm Monday-Friday!"],
          "context_set": ""
         },
-	{"tag": "Menu",
+	   {"tag": "Menu",
          "patterns": ["What is fresh", "whats on the menu", "What food itmes are avilable","Menucard please", "Tell me menu", "Menu", "May i get food description"],
-         "responses": ["Sir do you want veg or non veg"],
+         "responses": ["Do you want veg or non veg"],
          "context_set": ""
         },
-	{"tag": "Veg",
-         "patterns": ["Veg", "We would like to have veg food", "we will prefer vegeterian", "veg men please", "Menu", "May i get food description"],
-         "responses": ["We have Indian and Chinese cuisene","What do you like Indian or Chinese"],
+	   {"tag": "Chinese",
+         "patterns": ["Veg", "We would like to have chinese food", "we will prefer chinese", "chinese menu please", "chineses Menu", "May i get chinese food description"],
+         "responses": ["1. Sizzling Vegetable Drumsticks 2. Stuffed Mushroom Garlic Pepper 3. pepper and garlic 4. Crispy Chilli American Corns 5. Golden Fried Chilli Baby Corn 7. pungent spicy sauce 8. Crispy Crunchy Roll 9. served with spicy dip sauce 10. Fried Wantons Pepper Salt 11. Spicy Onion Pancake 12. DICED VEG SCHEZWAN 13. VEG MANCHURIAN(GRAVY) 14. MUSHROOM MANCHURIAN(GRAVY) 15. PANEER CHILLY(GRAVY) 16. SWEET & SOUR VEGETABLES 17. VEG CASHEWNUT 18. VEG CHOW CHOW 19. VEG BALL SCHEZWAN 20. VEG IN HOT GREEN SAUCE 21. VEG BALL SCHEZWAN 22. MUSHROOM & BABYCORNIN HOT GREEN SAUCE 23. MUSHROOM CHILLY(GRAVY) 24. VEG PINEAPPLE CASHEWNUT "],
          "context_set": ""
         },
-	{"tag": "Indian",
+	   {"tag": "Indian veg menu",
          "patterns": ["Indian", "We would like to have Indian cuisene", "we will prefer Indian food","veg men please", "Menu", "May i get food description"],
          "responses": ["1. Bhindi masala , 2. Aloo matar ,3. Veg kurma, 4. Lauki kofta,5. Aloo gobi gravy,6. Baingan bharta,7. Stuffed capsicum,8.  Veg kadai,9. Aloo palak,10. Mix veg11.  Bhindi fry, 12. Palak paneer, 13.  Green peas, 14.  Kovakkai fry"],
          "context_set": ""
         },
-	{"tag": "Veg Recpies",
+	   {"tag": "Veg Recpies",
          "patterns": ["Indian", "We would like to have Indian cuisene", "we will prefer Indian food","veg men please", "Menu", "May i get food description"],
          "responses": ["We have Indian and Chinese cuisene","What do you like Indian or Chinese"],
          "context_set": ""
         },
-	{"tag": "Non Veg",
-         "patterns": ["What is fresh", "What food itmes are avilable", "Menucard please", "Tell me menu","Menu", "May i get food description"],
-         "responses": ["Sir do you want veg or non veg"],
-	 "context_set": ""
+        {"tag": "Pizza",
+         "patterns": ["Pizza list", "please give me pizaa list", "which pizza do you have","pizza"],
+         "responses": ["1. Margherita 2.Double Cheese Margherita 3.Farm House Mexican Green Wave  4.Peppy Paneer CHEESE  5.CORN  6. PANEER MAKHANI 7.Indi Tandoori Paneer 8.PEPPER BARBECUE CHICKEN 9.CHICKEN SAUSAGE 10.Chicken Dominator 11. Indi Chicken Tikka 12.CHICKEN FIESTA 13. Chicken Golden Delight"],
+         "context_set": ""
+        },
+        {"tag": "Non veg menu",
+         "patterns": ["non veg", "non veg please", "i would like to have nonveg"],
+         "responses": ["1. Butter Chicken 2. Spicy Chicken Masala 3. Amritsari Chicken Masala 4. Chicken Chettinad 5. Chicken Korma 6. Kadai Chicken 7. Malvani Chicken Curry  8. Chicken Kolhapuri 9. Chicken Vindaloo  10. Al Hachi Chicken  11. Laal Maas 12. Pasanda 13. Mutton Kofte 14. Champaran Mutton Curry 15. Railway Mutton Curry  16. Nihari Mutton 17. Gongura Mamsam  18. Sali Boti 19. Rogan Josh"],
+         "context_set": ""
+        },
+        {"tag": "Price",
+         "patterns": ["what is price of this", "how much it will cost", "tell me cost of this item","what is price","cost","price"],
+         "responses": ["dont worry about price sir its virtual shop","sir its one price policy RS100 per item "],
+         "context_set": ""
+        },
+    
+        {"tag": "Biryani",
+         "patterns": ["which biryani do you have", "biryani ", "do you have biryani"],
+         "responses": ["NIMANTRAN SPECIAL BIRYANI(CHICKEN) CHICKEN BIRYANI  CHICKEN HYDERABADI BIRYANI  MUTTON BIRYANI  EGG BIRYANI  EGG HYDERABADI BIRYANI"],
+	   "context_set": ""
         }
    ]
 }
