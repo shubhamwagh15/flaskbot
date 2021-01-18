@@ -1,10 +1,10 @@
-#from chatbot import chatbot
+
 #import streamlit as st
 import nltk
-#nltk.download('punkt')
+nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
-#nltk.download('wordnet')
+nltk.download('wordnet')
 # Libraries needed for Tensorflow processing
 import tensorflow as tf
 import numpy as np
